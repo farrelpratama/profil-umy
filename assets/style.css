@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Noto Sans", serif;
+}
+
+h2 {
+  color: rgba(155, 0, 0);
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/imgBanner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 15%;
+  padding: 10px 0;
+}
+
+.title {
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  color: white;
+}
+
+main .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+main .about img {
+  width: 50%;
+}
+
+main .about p {
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main .goals {
+  background-color: rgb(0, 66, 0);
+  width: 100%;
+  padding: 20px 0;
+}
+
+main .goals .container {
+  background-color: white;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main .awards .container {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .awards .container .wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+main .awards .container .wraper img {
+  width: 45%;
+}
+
+main .lambang {
+  margin: 50px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .lambang img {
+  width: 50%;
+}
+
+main .lambang .container .paragraph {
+  max-height: 170px;
+  overflow: hidden;
+}
+
+main .lambang .container .paragraph.expand {
+  max-height: max-content;
+}
+
+main .lambang span {
+  align-self: self-start;
+  color: rgb(0, 66, 0);
+  font-weight: bold;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+main .lambang span:hover {
+  color: rgb(255, 225, 0);
+}
+
+main .contact {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .contact .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .contact .contact-us {
+  display: flex;
+  margin: 20px 0;
+  padding: 20px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main .contact .contact-us .form-container {
+  width: 100%;
+  padding: 0 20px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main .contact .contact-us .form-container input {
+  width: 80%;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+main .contact .contact-us .form-container input[type="text"] {
+  border-bottom: 1px solid gray;
+}
+
+main .contact .contact-us .form-container input[type="text"]:focus {
+  border-bottom: 1px solid rgb(3, 138, 3);
+}
+
+main .contact .contact-us .form-container input:nth-child(1) {
+  flex: 1;
+}
+main .contact .contact-us .form-container input:nth-child(2) {
+  flex: 1;
+}
+
+main .contact .contact-us .form-container input:nth-child(3) {
+  flex: 3;
+}
+
+main .contact .contact-us .form-container input:nth-child(4) {
+  width: 100px;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(0, 66, 0);
+  color: white;
+}
+
+main .contact .contact-us .form-container input:nth-child(4):hover {
+  border: 1px solid rgb(0, 66, 0);
+  background-color: white;
+  color: rgb(0, 66, 0);
+}
+
+footer {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-image .icon img {
+    width: 5%;
+  }
+
+  .hero-image {
+    height: 50vh;
+  }
+
+  main .about {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  main .about img {
+    width: 20%;
+  }
+
+  main .about p {
+    max-width: 400px;
+  }
+
+  main .goals .container {
+    max-width: 600px;
+    margin: 10px;
+  }
+
+  main .goals {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  main .awards .container .wraper img {
+    width: 200px;
+    margin: 20px;
+  }
+
+  main .lambang {
+    margin: 50px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  main .lambang img {
+    width: 25%;
+    align-self: flex-start;
+  }
+
+  main .lambang .container {
+    width: 45%;
+  }
+
+  main .contact {
+    flex-direction: column;
+  }
+
+  main .contact .container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  main .contact .container .contact-us {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
